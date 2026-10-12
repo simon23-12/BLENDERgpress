@@ -1,0 +1,107 @@
+{
+ "fps": 30,
+ "duration": 63.0,
+ "phases": [
+  {
+   "from": 0.0,
+   "to": 6.0,
+   "key": "letter"
+  },
+  {
+   "from": 6.0,
+   "to": 16.0,
+   "key": "setzen"
+  },
+  {
+   "from": 16.0,
+   "to": 21.0,
+   "key": "form"
+  },
+  {
+   "from": 21.0,
+   "to": 29.0,
+   "key": "einfaerben"
+  },
+  {
+   "from": 29.0,
+   "to": 37.0,
+   "key": "papier"
+  },
+  {
+   "from": 37.0,
+   "to": 40.5,
+   "key": "einfahren"
+  },
+  {
+   "from": 40.5,
+   "to": 45.5,
+   "key": "drucken"
+  },
+  {
+   "from": 45.5,
+   "to": 50.0,
+   "key": "ausfahren"
+  },
+  {
+   "from": 50.0,
+   "to": 57.0,
+   "key": "bogen"
+  },
+  {
+   "from": 57.0,
+   "to": 63.0,
+   "key": "rubrik"
+  }
+ ],
+ "ink": [
+  25.3,
+  28.0
+ ],
+ "print": 42.6,
+ "rubric": [
+  58.6,
+  61.0
+ ],
+ "onTympan": [
+  32.0,
+  51.6
+ ],
+ "bar": {
+  "pull": [
+   41.2,
+   42.4
+  ],
+  "hold": 43.2,
+  "release": 44.6,
+  "deg": -80
+ },
+ "carriage": {
+  "in": [
+   37.2,
+   40.0
+  ],
+  "out": [
+   45.8,
+   48.4
+  ],
+  "travel_dm": 7.0
+ },
+ "type": {
+  "sorts": 442,
+  "lines": 10,
+  "line1": 41,
+  "em_dm": 0.52
+ },
+ "text": [
+  "n principio creauit deus celum et terram.",
+  "Terra autem erat inanis et uacua: et tenebre",
+  "erant super faciem abissi: et spiritus domini",
+  "ferebatur super aquas. Dixitq; deus. Fiat lux.",
+  "Et facta est lux. Et uidit deus lucem q esset bona: et",
+  "diuisit lucem a tenebris. Appellauitq; lucem diem et",
+  "tenebras noctem. Factumq; est uespere et mane dies",
+  "unus. Dixit quoq; deus. Fiat firmamentum in medio",
+  "aquarum: et diuidat aquas ab aquis. Et fecit deus",
+  "firmamentum."
+ ]
+}
