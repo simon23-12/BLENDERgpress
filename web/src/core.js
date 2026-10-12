@@ -36,7 +36,7 @@ export const isPhone = () => innerWidth <= 820 || innerHeight <= 500;
  *   bg, fog, exposure, envIntensity, fov, near, far, minDistance, maxDistance
  *   gtao: {radius, thickness, ...}, bloom: [strength, radius, threshold]
  *   lights(ctx)                → { key } (key = shadow-casting DirectionalLight)
- *   unit                       metres per scene unit (scale bar)
+ *   unit                       metres per scene unit (scale bar); number or fn(ctx)
  *   home(ctx)                  → { target: Vector3, offset: Vector3 }
  *   followGoal(ctx, t, out)    camera target while "Folgen" is on
  *   phaseView(ctx, key)        → { dir: Vector3, dist } camera move when a phase starts (Folgen on)
@@ -595,7 +595,7 @@ export function createViewer(cfg) {
   function updateScale() {
     const d = currentDist();
     const uPerPx = (2 * d * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2))) / innerHeight;
-    const mPerPx = uPerPx * (cfg.unit ?? 1);
+    const mPerPx = uPerPx * (typeof cfg.unit === 'function' ? cfg.unit(ctx) : cfg.unit ?? 1);
     const maxPx = isPhone() ? 90 : 130;
     let L = NICE[0];
     for (const n of NICE) if (n / mPerPx <= maxPx) L = n;
